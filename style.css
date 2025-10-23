@@ -1,0 +1,39 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    background-color: #eee;
+    width: 700px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header {
+    background-color: #7eca2d;
+    height: 50px;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+section.calendario {
+    display: grid;
+    grid-template-columns: repeat(7, 100px)/ repeat(5, 100px);
+    place-items: stretch stretch;
+}
+
+div.item {
+    border: 1px solid #000;
+    width: 100px;
+    height: 100px;
+}
